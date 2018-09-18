@@ -5,7 +5,8 @@ Save the Dockerfile to your current directory and specify these commands to buil
 
 ```
 docker build -t openj9 -f Dockerfile .
-docker run -it openj9
+mkdir openj9
+docker run -v openj9:/root/openj9 -it openj9
 ```
 
 
